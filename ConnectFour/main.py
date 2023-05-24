@@ -38,6 +38,14 @@ def drawRectangle(x,y,w,h,color):
   turtle.end_fill()
 
 def drawCircle(x,y,r,color):
+  turtle.up()
+  turtle.goto(x, y - r)
+  turtle.seth(0)
+  turtle.down()
+  turtle.fillcolor(color)
+  turtle.begin_fill()
+  turtle.circle(r, 360, 150)
+  turtle.end_fill()
   
   
   
