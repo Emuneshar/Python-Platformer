@@ -41,8 +41,12 @@ while True:
       userName = input("What is your username?")
       for x in listOfAccounts:
         if x.getUserName() == userName:
-          print("We found your account!")
-          password = input("Please enter the password for your account:\n ")
+            print("We found your account!")
+            password = input("Please enter the password for your account:\n ")
+            if x.getPassword() == password:
+                print("You're in!")
+                deposit = float(input("How much would you like to deposit?"))
+                x.setAccountBalance(x.getAccountBalance()+deposit)
 
 
 
