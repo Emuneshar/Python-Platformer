@@ -25,7 +25,7 @@ def createAccount():
   User.setPassword(passW)
   User.setAccountHolder(accountH)
   User.setAccountNumber(accountN)
-  User.setAccountBalance(balance)
+  User.setAccountBalance(bal)
   return User  
   
 
