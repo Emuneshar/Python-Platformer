@@ -33,7 +33,8 @@ def createAccount():
 match choice:
   case 1:
     listOfAccounts.append(createAccount())
-
+  case 2:
+    userName = input("What is your username?")
 
     
     
