@@ -30,16 +30,9 @@ def createAccount():
   
 
 
-Bob = user("bob", "bob", "bob", 5, 2)
-print(Bob.getAccountHolder())
 
 
 
-#match choice:
-#  case 1:
-    #listOfAccounts.append(createAccount())
-#    print(listOfAccounts)
-    
     
     
     
