@@ -21,11 +21,11 @@ def createAccount():
   accountH = str(input("What is your full name?\n"))
   accountN = random.randint(999999,999999999)
   bal = random.randint(0,10000000000)
-  user.setUserName(userN)
-  user.setPassword(passW)
-  user.setAccountHolder(accountH)
-  user.setAccountNumber(accountN)
-  user.setAccountBalance(balance)
+  User.setUserName(userN)
+  User.setPassword(passW)
+  User.setAccountHolder(accountH)
+  User.setAccountNumber(accountN)
+  User.setAccountBalance(balance)
   return User  
   
 
