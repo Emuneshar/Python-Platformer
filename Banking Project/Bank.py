@@ -29,16 +29,22 @@ def createAccount():
   return User  
   
 
+while True:
+  
+  choice = int(input("What would you like to do?\n"))
+  
+  match choice:
+    case 1:
+      listOfAccounts.append(createAccount())
+      
+    case 2:
+      userName = input("What is your username?")
+      for x in listOfAccounts:
+        if x.getUserName() == userName:
+          print("We found your account!")
+          password = input("Please enter the password for your account:\n ")
 
-match choice:
-  case 1:
-    listOfAccounts.append(createAccount())
-  case 2:
-    userName = input("What is your username?")
 
-    
-    
-    
 
 
 
