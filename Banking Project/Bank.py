@@ -30,7 +30,9 @@ def createAccount():
   
 
 
-
+match choice:
+  case 1:
+    listOfAccounts.append(createAccount())
 
 
     
