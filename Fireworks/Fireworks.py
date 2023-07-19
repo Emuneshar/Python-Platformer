@@ -25,3 +25,13 @@ for i in range(15):
   line.setheading(direction)
   direction = direction + 24
   lines.append(line)
+
+def fireworks(x,y):
+  pen.penup()
+  pen.goto(x, -300)
+  pen.pendown()
+  while pen.ycor() < y:
+    pen.forward(5)
+    screen.update()
+  pen.clear()
+  boom(x,y)
