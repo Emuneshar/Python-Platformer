@@ -45,3 +45,11 @@ def boom(x,y):
     line.penup()
     line.goto(x,y)
     line.pendown()
+
+size = random.randint(5,20)
+for i in range(size):
+    for line in lines:
+      line.forward(5)
+    screen.update()
+
+screen.onclick(fireworks)
