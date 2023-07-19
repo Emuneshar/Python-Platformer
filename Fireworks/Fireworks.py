@@ -13,3 +13,6 @@ pen.color("white")
 pen.hideturtle()
 pen.setheading(90)
 
+# Create lines for the fireworks
+lines = []
+direction = 0
