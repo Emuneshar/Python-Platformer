@@ -35,3 +35,13 @@ def fireworks(x,y):
     screen.update()
   pen.clear()
   boom(x,y)
+
+# Code for the explosion
+def boom(x,y):
+  # setup the lines
+  for line in lines:
+    color = random.choice(colors)
+    line.color(color)
+    line.penup()
+    line.goto(x,y)
+    line.pendown()
