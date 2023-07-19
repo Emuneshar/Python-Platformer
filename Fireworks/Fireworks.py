@@ -16,3 +16,12 @@ pen.setheading(90)
 # Create lines for the fireworks
 lines = []
 direction = 0
+
+
+for i in range(15):
+  line = turtle.Turtle()
+  line.hideturtle()
+  line.width(2)
+  line.setheading(direction)
+  direction = direction + 24
+  lines.append(line)
